@@ -20,7 +20,7 @@
 		$('#nav').prepend('<div id="menu-icon"></div>');
 
 		/* toggle nav */
-		$("#menu-icon, #slidenav li").on("click", function(){
+		$("#menu-icon").on("click", function(){
 			$("#slidenav").slideToggle();
 			$(this).toggleClass("active");
 		});
@@ -54,7 +54,8 @@
 			<a href="#about">
 				<div id="button"><h3>ON A MISSION </h3>
 				</div>
-			</a>    
+			</a> 
+			<div id="arrow"></div>   
 		</div> 
 	</div> 
 	<div id="about">
