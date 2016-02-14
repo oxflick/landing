@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Landing page, OxanaWeb Portfolio</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<script>
+
+	jQuery(document).ready(function($){
+
+		/* prepend menu icon */
+		$('#nav').prepend('<div id="menu-icon"></div>');
+
+		/* toggle nav */
+		$("#menu-icon, #slidenav li").on("click", function(){
+			$("#slidenav").slideToggle();
+			$(this).toggleClass("active");
+		});
+
+	});
+
+	</script>
+</head>
+<body>
+	<!-- HEADER START--> 
+	<header id="header">
+		<div class="content">
+			<div id="logo"><a href="/"> OXANA WEB </a></div>
+			<nav id="nav">
+				<ul id="slidenav">
+					<li><a href="#home" class="active" title="Next Section" >Home</a></li>
+					<li><a href="#about" title="Next Section">About</a></li>
+					<li><a href="#services" title="Next Section">Services</a></li>
+					<li><a href="#skills" title="Next Section">Skills</a></li>
+					<li><a href="#contact" title="Next Section">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>	
+	<!-- SLIDES START --> 
+	<div id="home">
+		<div class="content">
+			<h1>WEB</h1>
+			<h1>DEVELOPER</h1>
+			<div id="divider"> </div>
+			<a href="#about">
+				<div id="button"><h3>ON A MISSION </h3>
+				</div>
+			</a>    
+		</div> 
+	</div> 
+	<div id="about">
+		<div class="content" >
+			<div class="quotes_container">
+				<p class="quotes">“US-based Web Developer, passionate about new technologies, understand responsive web development, can prototype rapidly, and turn concepts to life.”</p>	
+			</div> 
+		</div> 
+	</div> 
+	<div id="services">
+		<div class="content">
+			<div class="quotes_container">
+				<p class="quotes">“I build websites, landing pages, and microsites based on Photoshop or Illustrator designs utilizing HTML5, CSS3, Bootstrap, JavaScript, MySQL, and PHP” </p>
+				<p class="quotes">“I create responsive and usable web applications from original artwork files.” </p>
+				<p class="quotes mobile">“WordPress site administration, theme development.” </p>
+			</div> 
+		</div> 
+	</div> 
+	<div id="skills">
+		<div class="content">
+			<div class="quotes_container">
+				<p class="quotes lastslide">“2 years of hands-on responsive development experience” </p>
+				<p class="quotes">“Expertise with HTML5, CSS3, Bootstrap and JavaScript” </p>
+				<p class="quotes mobile">“WordPress theme development, relational databases such as MySQL and PostgreSQL, PHP.” </p>	
+			</div> 
+		</div> 
+	</div> 
+	<div id="contact">
+		<div class="content">
+			<div class="quotes_container">
+				<p class="quotes lastslide">“If you want to know more about my work, check my portfolio at <a href="http://oxanaweb.com/portfolio.html">www.oxanaweb.com</a>. If you want to talk more, send me <a href="http://oxanaweb.com/contact.html">a message</a>.” </p>
+				<img src="images/myimage.png" align="left"/> <h4 class="author_name_white">Oxana </h4>
+			</div> 
+			<div id="copyright"><a href="http://www.oxanaweb.com/">2016, Copyright oxanaweb.com </a></div> 
+		</div> 
+	</div> 
+	<!-- SLIDES END -->
+</body>
+</html>	
+
