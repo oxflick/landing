@@ -247,11 +247,15 @@ a:hover {
 	display: none;
 }
 
-#nav, #slidenav, ul#slidenav {
-	display: block;
+#slidenav, ul#slidenav {
+	display: none;
 }
 
 @media (max-width: 747px) {
+
+	ul#slidenavdesktop {
+		display: none;
+	}
 	/* menu icon */
 	#menu-icon {
 		height: 30px;
@@ -315,10 +319,10 @@ a:hover {
 }
 
 @media (min-width: 748px) {
-	/* ensure #nav is visible on desktop version */
+	/* ensure #nav is visible on desktop version 
 	ul#slidenav {
 		display: block !important;
-	}
+	}*/
 }
 
 
